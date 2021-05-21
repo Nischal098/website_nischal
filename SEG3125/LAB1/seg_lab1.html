@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <!--Title Page-->
+        <title>SEG3125 Lab 1</title>
+    </head>
+
+    <body>
+
+        <!--Simple Header for Survey-->
+        <h1>Survey Application Form for Artstation</h1>
+        <br>
+
+        <!--Page References-->
+        <txt1>The website going to be surveyed is: </txt1>
+        <a href="https://www.artstation.com/?sort_by=community">Artstation!</a>
+        <br>
+
+        <!--Load an Image Screenshot of Webpage-->
+        <img src="artstation_screenshot.png" alt="Artstation Screenshot">
+        <br>
+
+        <!--Create a Form Tag-->
+        <form>
+            <!--Form 1 is a TextBox type Question!-->
+            <div class="f1">
+
+                <h2>Please enter your Occupation!</h2>
+                <br>
+
+                <!--Create a Input type Textbox-->
+                <input type="text"><br>
+
+            </div>
+            <br>
+
+            <!--Form 2 is a Radio Button Question!-->
+            <div class="f2">
+
+                <h2>Have you used Artstation before?</h2>
+                <br>
+
+                <!--Create RadioBoxes-->
+                <input type="radio" id="yes" name="visited" value="yes">
+                <label for="yes">Yes</label><br>
+
+                <input type="radio" id="no" name="visited" value="no">
+                <label for="no">No</label><br>
+
+            </div>
+            <br>
+
+            <!--Form 3 is a Single Selection Checklist Question!-->
+            <div class="f3">
+
+                <h2>Gender</h2>
+                <br>
+
+                <!--Create a Selection List-->
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            </div>
+            <br>
+
+            <!--Form 1 is a Checkbox type Question!-->
+            <div class="f4">
+
+                <h2>Occupation</h2>
+                <br>
+
+                <!--Create Checkboxes-->
+                <input type="checkbox" id="healthcare" value="healthcare">
+                <label for="healthcare">Healthcare</label><br>
+
+                <input type="checkbox" id="designer" value="designer">
+                <label for="designer">Designer</label><br>
+
+                <input type="checkbox" id="engineer" value="engineer">
+                <label for="engineer">Engineer</label><br>
+
+            </div>
+            <br>
+
+            <!--Form 1 is a TextBox type Comment Box!-->
+            <div class="f5">
+
+                <h2>Additional Comments!</h2>
+                <br>
+
+                <!--Create a Text Area-->
+                <textarea name="comments" id="comments"></textarea><br>
+
+            </div>
+            <br>
+
+        </form>
+
+        <!--Create a submit button-->
+        <button type="button">Submit</button>
+
+    </body>
+
+    <footer>
+        <!--Create a Footer-->
+        <txt2>Author: Hege Refsnes</txt2>
+      </footer>
+</html>
