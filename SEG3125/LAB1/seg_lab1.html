@@ -14,17 +14,20 @@
     <body>
 
         <!--Simple Header for Survey-->
-        <h1>Survey Application Form for Artstation</h1>
+        <h1>Survey Form: Artstation Experience</h1>
         <br>
 
         <!--Page References-->
-        <txt1>The website going to be surveyed is: </txt1>
-        <a href="https://www.artstation.com/?sort_by=community">Artstation!</a>
-        <br><br>
+        <div class="firstTxt">
+            <txt>Please visit the website before performing the survey >>> </txt>
+            <a href="https://www.artstation.com/?sort_by=community">Artstation</a>
+            << <br><br>
+        </div>
 
         <div class="image">
             <!--Load an Image Screenshot of Webpage-->
             <img src="artstation_screenshot.png" alt="Artstation Screenshot">
+            <!--style="width:50%;height:300px"-->
             <br>
         </div>
 
@@ -33,11 +36,11 @@
             <!--Form 1 is a TextBox type Question!-->
             <div class="form">
 
-                <h2>Please enter your Occupation!</h2>
-                <br>
+                <h2>Please enter your Name</h2>
 
                 <!--Create a Input type Textbox-->
-                <input type="text"><br>
+                <input id="nametxt" type="text"
+                placeholder="Name"><br>
 
             </div>
             <br>
@@ -46,7 +49,6 @@
             <div class="form">
 
                 <h2>Have you used Artstation before?</h2>
-                <br>
 
                 <!--Create RadioBoxes-->
                 <input type="radio" id="yes" name="visited" value="yes">
@@ -62,33 +64,38 @@
             <div class="form">
 
                 <h2>Gender</h2>
-                <br>
 
                 <!--Create a Selection List-->
-                <select>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-
+                <div class="select">
+                    <select>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="select_arrow">
+                    </div>
+                </div>
             </div>
             <br>
 
             <!--Form 1 is a Checkbox type Question!-->
             <div class="form">
 
-                <h2>Occupation</h2>
-                <br>
+                <h2>What Kind of Artist are you?</h2>
 
                 <!--Create Checkboxes-->
-                <input type="checkbox" id="healthcare" value="healthcare">
-                <label for="healthcare">Healthcare</label><br>
+                <input type="checkbox" id="student" value="student">
+                <label for="student">Student</label><br>
 
-                <input type="checkbox" id="designer" value="designer">
-                <label for="designer">Designer</label><br>
+                <input type="checkbox" id="teacher" value="teacher">
+                <label for="teacher">Teacher</label><br>
 
-                <input type="checkbox" id="engineer" value="engineer">
-                <label for="engineer">Engineer</label><br>
+                <input type="checkbox" id="professionalartist" value="professionalartist">
+                <label for="professionalartist">Professional Artist</label><br>
+
+                <input type="checkbox" id="none" value="none">
+                <label for="none">None of the Above</label><br>
 
             </div>
             <br>
@@ -96,18 +103,18 @@
             <!--Form 1 is a TextBox type Comment Box!-->
             <div class="form">
 
-                <h2>Additional Comments!</h2>
-                <br>
+                <h2>Summarize your Experience in a Few Words</h2>
 
                 <!--Create a Text Area-->
-                <textarea name="comments" id="comments"></textarea><br>
+                <textarea id="comments" name="comments"
+                placeholder="Comments"></textarea><br>
 
             </div>
             <br>
 
         </form>
 
-        <div class="button">
+        <div class="btn">
             <!--Create a submit button-->
             <button type="button">Submit</button>
             <br>
