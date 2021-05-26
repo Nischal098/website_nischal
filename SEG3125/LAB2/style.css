@@ -1,37 +1,100 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
+body, html {
+  min-height: 100%;
+
+  background: rgb(18,99,170);
+  background: linear-gradient(0deg, rgba(18,99,170,1) 0%, rgba(210,252,255,1) 100%);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Font */
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  /* Font Color */
+  color: black;
+
+  /* Font Align */
+  text-align: center;
+
+  /* Font Width */
+  font-weight: 900;
+}
+
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
+  overflow: hidden;
+  border: 1px solid #037d6c;
+  background: rgb(18,155,170);
+  background: linear-gradient(360deg, rgba(210,252,255,1) 0%, rgba(18,155,170,1) 41%);
 
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
+  /* Font Width */
+  font-weight: 900;
+}
 
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
 
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #55f7fb;
+}
 
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #a3f3f5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #037d6c;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Footer always goes to the bottom */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+
+  display: inline-block;
+  cursor: pointer;
+
+  /* Position */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33%;
+
+  font-size: 18px;
+}
