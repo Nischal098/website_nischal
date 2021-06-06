@@ -1,0 +1,118 @@
+
+html {
+  /* Full height */
+  min-height: 100%;
+
+  background-color: #374991;
+  background: linear-gradient(0deg, #374991 0%, #add7fe 100%);
+}
+
+body {
+  /* Font */
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1c153d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#regForm {
+  margin: 50px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+
+  border: 3px solid #1c153d;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #2e448f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #add7fe;
+  opacity: .6;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2e448f;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+h1 {
+  /* Font Color */
+  color: #2e448f;
+
+  /* Font Align */
+  text-align: center;
+
+  /* Font Width */
+  font-weight: 900;
+}
+
+/* Footer always goes to the bottom */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  background-color: #2e448f;
+  font-weight: bold;
+  color: #add7fe;
+  vertical-align: top;
+}
+
+p {
+  font-size: larger;
+}
+
+label {
+  font-size: large;
+  vertical-align: super;
+}
+
+input {
+  margin-top: 5px;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+
+}

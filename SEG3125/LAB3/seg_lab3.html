@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_form_steps.asp?>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <!--Simple Header for Survey-->
+    <h1>Limsa Lominsa Groceries</h1>
+    <br>
+
+    <form id="regForm" action="">
+
+      <!-- Tab content -->
+      <div class="tab">
+        <h2>Filter Products</h2>
+        <p>If you require products to be filtered depending on your needs,
+        <br><br>
+        Please select any of the following dietary restrictions: </p>
+
+        <!--Create Checkboxes-->
+        <input type="checkbox" id="dietselect" name="filter" value="Lactose">
+        <label for="Lactose">Lactose Intolerant</label><br>
+
+        <input type="checkbox" id="dietselect" name="filter" value="Nut">
+        <label for="Nut">Nut Allergy</label><br>
+
+        <input type="checkbox" id="dietselect" name="filter" value="SeaFood">
+        <label for="SeaFood">SeaFood Allergy</label><br>
+
+        <input type="checkbox" id="dietselect" name="filter" value="Diabetic">
+        <label for="Diabetic">Diabetic</label><br>
+
+        <p>Click the button below to update relevant products for the next page: </p>
+        <button id="addfilter" type="button" class="addfilter" onclick="populateListProductChoices('dietSelect', 'displayProduct')">
+          Update Products
+        </button>
+
+      </div>
+
+      <div class="tab">
+        <h2>Recommended Products</h2>
+        <p>Please select the products based on your filters:</p>
+        <br>
+        <div id="displayProduct"></div>
+        <br>
+        <button id="addCart" type="button" class="block" onclick="selectedItems()">
+          Add selected items to cart.
+        </button>
+      </div>
+
+      <div class="tab">
+        <h2>Cart</h2>
+        <p>Here is your cart.</p>
+        <p><div id="displayCart"></div></p>
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+
+    </form>
+
+    <script src="groceries.js"></script>
+    <script src="main.js"></script>
+
+
+  </body>
+
+  <div class="footer">
+    <!--Create a Footer-->
+    <p>Author: Nischal</p>
+  </div>
+
+</html>
