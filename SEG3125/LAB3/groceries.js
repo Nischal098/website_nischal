@@ -13,7 +13,7 @@ var products = [
 		tag: "Diabetic"
 	},
 	{
-		name: "Salmon per 1/2 Lbs",
+		name: "Salmon per 1/2 lbs",
 		price: 9.99,
 		tag: "SeaFood"
 	},
@@ -23,12 +23,12 @@ var products = [
 		tag: "Lactose"
 	},
 	{
-		name: "Red Cherries per Lbs",
+		name: "Red Cherries per lbs",
 		price: 9.75,
 		tag: ""
 	},
 	{
-		name: "Baby Peppers per Lbs",
+		name: "Baby Peppers per lbs",
 		price: 3.97,
 		tag: ""
 	},
@@ -48,7 +48,7 @@ var products = [
 		tag: "Nut"
 	},
 	{
-		name: "Chicken Breast per Lbs",
+		name: "Chicken Breast per lbs",
 		price: 9.07,
 		tag: ""
 	},
@@ -73,7 +73,7 @@ var products = [
 		tag: "Diabetic"
 	},
 	{
-		name: "Crabs per 1/4 Lbs",
+		name: "Crabs per 1/4 lbs",
 		price: 8.49,
 		tag: "SeaFood"
 	}
