@@ -1,7 +1,21 @@
+body{
+
+    background: rgb(228, 228, 228) !important;
+}
+
 body {
     padding-top: 75px;
 }
 
 h1 {
     font-size: 25px;
+    color: #cff4fc;
+}
+
+.card {
+    background-color: #cff4fc;
+}
+
+h2 {
+    color: #276a7b;
 }

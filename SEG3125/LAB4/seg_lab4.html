@@ -21,74 +21,281 @@
     <div class = "container-lg">
 
       <!-- Nav Bar-->
-      <nav class="navbar fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <h1>
-              <img src="http://www.pngall.com/wp-content/uploads/5/Black-Dog-PNG.png"
-              alt="VET LOGO" width="30" height="30" class="d-inline-block align-text-top">
-              Doggo Veterinary Clinic
-            </h1>
-          </a>
+      <!-- Taken From: https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items -->
+      <nav class="fixed-top navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+              <h1 class="align-middle fw-bolder">
+                <img src="Images/Logo.png"
+                alt="VET LOGO" width="41" height="41" class="d-inline-block align-text-top">
+                Doggo Veterinary Clinic
+              </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
         </div>
       </nav>
 
-      <div class=" p-3 my-3 border bg-light">
-        <!-- List of things needed in the webpage -->
-
-        Health clinic Information: <br>
-        The Doggo Veterinary Clinic is your trustworthy source to provide the
-        most ceritfied and guranteed protection and care towards your dogs.
-        We provide services to all kinds of dogs with certified professionals. <br>
-
-        <br>
-        Location (Health Service Address): <br>
-        588 Prince of Wales Dr <br>
-        Ottawa <br>
-        Ontario <br>
-        K1C 1X2 <br>
-
-        <br>
-        The services offered and their prices: <br>
-        Dog Grooming $100 <br>
-        Allergy Testing $150 <br>
-        Dental Care $300 <br>
-        Surgery $1000 <br>
-        Vaccination $250 <br>
-
-        <br>
-        Experts 3: <br>
-        Dr. Brad <br>
-        Vet at Russell Ridge Animal Hospital <br>
-        Dr. Brad Miller attended Texas A&M University, where he obtained his
-        Doctor of Veterinary Medicine degree, graduating with cum laude
-        honors in 1991. <br>
-
-        <br>
-        Dr. Mike <br>
-        Veterinarian at Apalachee Ridge Animal Hospital <br>
-        Dr. Michael A. Wanchick, a native of West Virginia, obtained his
-        undergraduate degree in microbiology and biochemistry at Miami
-        University, a master's degree in biology at Georgia Southern
-        University, and his doctorate at the University of Georgia's College
-        of Veterinary Medicine. <br>
-
-        <br>
-        Dr. Carrie <br>
-        Veterinarian at Hamilton Ridge Animal Hospital <br>
-        Dr. Carrie Cummings Hembree graduated from the University of Georgia
-        College of Veterinary Medicine in 2005.  She received a Bachelor
-        of Science degree from Piedmont College in 2001. <br>
-
-        <br>
-        Health clinic possible user actions <br>
-          • Selection of a service <br>
-          • Selection of a date and time <br>
-          • Enter their contact information <br>
+      <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+      https://getbootstrap.com/docs/5.0/components/alerts/
+      -->
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          Due to <strong>COVID19!</strong> Please wear <strong>masks</strong> when visiting the clinic!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-9">
+            <div class=" p-3 my-3 border bg-light">
+              <h2 class="fw-bold">About us</h2> <br>
+              The Doggo Veterinary Clinic is your trustworthy source to provide the
+              most ceritfied and guranteed protection and care towards your dogs.
+              We provide services to all kinds of dogs with certified professionals.
+              We are able to book appointments which can be found below.
+              Please take a look at our services as well as our experts on the team
+              so you feel safe bringing your dog to us.
+              <br><br>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class=" p-3 my-3 border bg-light">
+              <h2 class="fw-bold">Location</h2>
+              Health Service Address <br>
+              588 Prince of Wales Dr <br>
+              Ottawa <br>
+              Ontario <br>
+              K1C 1X2 <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!--
+      Tables are one of many ways to organize information easily.
+      It is a good way to list of prices, or services in a business website
+      https://getbootstrap.com/docs/5.0/content/tables/
+      -->
+      <br>
+      <h2 class="fw-bold">Services Offered</h2>
+      <p> The services offered and their prices<br></p>
+      <table class="table table-info table-hover text-center table-striped">
+        <thead>
+            <tr>
+                <th scope="col"><h1></h1></th>
+                <th scope="col"><h1>Service</h1></th>
+                <th scope="col"><h1>Description</h1></th>
+                <th scope="col"><h1>Price</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Images/grooming.jpeg" width="200" height="150"></td>
+                <td>Dog Grooming</td>
+                <td>Groom your Dogs to make them happy by ensuring the fur
+                    is clean and healthy.
+                </td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td><img src="Images/allergies.jpg" width="200" height="150"></td>
+                <td>Allergy Testing</td>
+                <td>Insert needles into your dog to find different that you
+                    should be aware of.
+                </td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td><img src="Images/dentist.png" width="200" height="150"></td>
+                <td>Dental Care</td>
+                <td>Check your dog teeths and ensure they are healthy through
+                    our different methods of testing.
+                </td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td><img src="Images/surgery.jpg" width="200" height="150"></td>
+                <td>Surgery</td>
+                <td>Handle emergency treatments as soon as possible by our
+                    certified professionals in the team.
+                </td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td><img src="Images/vaccination.png" width="200" height="150"></td>
+                <td>Vaccination</td>
+                <td>Vaccinations help protect your pet from a number of
+                    potentially serious and even fatal diseases, like rabies. </td>
+                <td>$250</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <br>
+      <h2 class="fw-bold text-start">Meet our Experts</h2>
+      <p class="text-start">Our team is happy to help!</p>
+      <!-- Referenced from: https://getbootstrap.com/docs/5.0/layout/columns/-->
+      <div class="container p-3 text-center justify-content-center">
+        <div class="card-group">
+          <div class="card">
+            <img src="Images/joestar.png" width="300" height="300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Joestar</h5>
+              <p class="card-text text-start">
+                <p class="fst-italic">Vet at Animal Hospital</p> <br>
+                Dr. Joestar attended Speedwagon University, where he obtained his
+                Doctor of Veterinary Medicine degree, graduating with
+                honors in 1991. </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="Images/khitkhat.png" width="300" height="300"  class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Professor Khit Khat</h5>
+              <p class="card-text">
+                <p class="fst-italic">Surgeon at Animal Hospital</p> <br>
+                Veterinarian at Doggo Hospital <br>
+                Professor Khit Khat, a native of Gridania, obtained his
+                undergraduate degree in biochemistry at Earthling,
+                and his doctorate at the University of Cells Studies.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="Images/jimmy.jpg" width="300" height="300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jimmy Neutron</h5>
+              <p class="card-text">
+                <p class="fst-italic">Veterinarian at Retroville Animal Hospital</p><br>
+                Jimmy Neutron graduated from the University of Georgia
+                College of Veterinary Medicine in 1998. He received a Bachelor
+                of Science degree at the age of 11.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="fw-bold">Book an Appointment</h2>
+            <p> Click the button on the right to book an Appointment<br></p>
+          </div>
+          <div class="col-8">
+            <!-- Button trigger modal
+            We use the same button code from above, but now we can trigger a modal to appear.
+            The bootstrap tutorial includes many different types of modals that you can explore
+            https://getbootstrap.com/docs/5.0/components/modal/
+            -->
+            <div class="d-grid gap-2" style="height: 75px;">
+              <button type="button" class="btn btn-primary btn align-middle" data-bs-toggle="modal" data-bs-target="#mySurvey">
+                <h3 class="fw-bold">
+                  Book an Appointment
+                </h3>
+                </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="mySurvey" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <h2>Schedule Appointments:</h2>
+                    <br>
+                    <form>
+                      <p> What services would you like: </p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="grooming" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Dog Grooming
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="allergy" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Allergy Testing
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="dental" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Dental Care
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="surgery" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Surgery
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="vaccination" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Vaccination
+                        </label>
+                      </div>
+                      <br>
+
+                      <p>Please select a time for the appointment: </p>
+                      <div class="date">
+                          <label>Date: <input type="date" name="appointment"></label>
+                      </div>
+                      <br>
+
+                      <!-- https://getbootstrap.com/docs/5.0/forms/floating-labels/ -->
+                      <p>Please provide your contact information: </p>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="label" class="form-control" id="floatingname" placeholder="Name">
+                        <label for="floatingname">Name</label>
+                      </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+    <br><br><br><br><br>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
