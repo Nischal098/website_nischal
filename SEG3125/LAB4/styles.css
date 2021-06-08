@@ -9,7 +9,6 @@ body {
 
 h1 {
     font-size: 25px;
-    color: #cff4fc;
 }
 
 .card {
@@ -18,4 +17,9 @@ h1 {
 
 h2 {
     color: #276a7b;
+}
+
+x1 {
+    font-size: 25px;
+    color: #cff4fc !important;
 }
