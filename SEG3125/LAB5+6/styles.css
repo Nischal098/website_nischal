@@ -1,0 +1,41 @@
+body{
+
+    background: rgb(228, 228, 228) !important;
+}
+
+body {
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.card {
+    background-color: #cff4fc;
+}
+
+h2 {
+    color: #276a7b;
+}
+
+x1 {
+    font-size: 25px;
+    color: #cff4fc !important;
+}
+
+#book {
+    background-color: #276a7b !important;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+#navTop {
+    padding-left: 1.5em;
+}
+
+.nav-item i {
+    color: white !important;
+}
