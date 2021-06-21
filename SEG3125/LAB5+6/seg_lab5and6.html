@@ -13,15 +13,17 @@
     <!-- Title -->
     <title>SEG3125 Lab 5 & 6</title>
 
-    <!-- Your own script -->
-    <script src="scripts/service.js"></script>
-
     <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
     <!-- which is built on top of JQuery and offers additional possibilities -->
     <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
 
     <!-- Taken from https://www.w3schools.com/bootstrap4/bootstrap_icons.asp-->
     <!-- Icons Font Awesome -->
@@ -82,24 +84,24 @@
           <div class="col-9">
             <div class=" p-3 my-3 border bg-light">
               <h2 class="fw-bold"><i class="fas fa-info-circle" id="nav_icon"></i> About Us </h2> <br>
-              The Doggo Veterinary Clinic is your trustworthy source to provide the
+              <p> The Doggo Veterinary Clinic is your trustworthy source to provide the
               most ceritfied and guranteed protection with care towards your dogs.
               We provide services to all kinds of dogs with certified professionals.
               We are able to book appointments which can be found below.
               Please take a look at our services as well as our experts on the team
-              so you feel safe bringing your dog to us.
-              <br><br>
+              so you feel safe bringing your dog to us. </p>
+              <br>
             </div>
           </div>
           <div class="col-3">
             <div class=" p-3 my-3 border bg-light">
               <h2 class="fw-bold"> <i class="fas fa-map-marker-alt" id="nav_icon"></i> Location</h2>
-              Health Service Address <br>
+              <p> Health Service Address <br>
               <a href="https://www.google.com/maps/place/588+Prince+of+Wales+Dr,+Ottawa,+ON+K2C+3K1/@45.3794895,-75.7065226,17z/data=!3m1!4b1!4m5!3m4!1s0x4cce0679e5d7217d:0x9cda33fe288e8cb1!8m2!3d45.3794858!4d-75.7043339">
                 588 Prince of Wales Dr <br>
                 Ottawa <br>
                 Ontario <br>
-                K1C 1X2 <br>
+                K1C 1X2 </p> <br>
               </a>
             </div>
           </div>
@@ -135,7 +137,7 @@
             <tr>
                 <td><img src="Images/allergies.jpg" width="200" height="150"></td>
                 <td><b>Allergy Testing</b></td>
-                <td>Insert needles into your dog to find different that you
+                <td>Insert needles into your dog to find different allergies that you
                     should be aware of.
                 </td>
                 <td>$150</td>
@@ -152,7 +154,7 @@
                 <td><img src="Images/surgery.jpg" width="200" height="150"></td>
                 <td><b>Surgery</b></td>
                 <td>Handle emergency treatments as soon as possible by our
-                    certified professionals in the team.
+                    certified professionals in the team. (Look at that good boy)
                 </td>
                 <td>$1000</td>
             </tr>
@@ -178,9 +180,11 @@
               <h5 class="card-title">Dr. Joestar</h5>
               <p class="card-text text-start">
                 <p class="fst-italic">Vet at Animal Hospital</p> <br>
-                Dr. Joestar attended Speedwagon University, where he obtained his
+                <p> Dr. Joestar attended Speedwagon University, where he obtained his
                 Doctor of Veterinary Medicine degree, graduating with
-                honors in 1991. </p>
+                honors in 1991.
+                <br><br><br><br>
+                <i>Works Tuesday to Saturday</i> </p>
             </div>
           </div>
           <div class="card">
@@ -189,10 +193,12 @@
               <h5 class="card-title">Professor Khit Khat</h5>
               <p class="card-text">
                 <p class="fst-italic">Surgeon at Animal Hospital</p> <br>
-                Veterinarian at Doggo Hospital <br>
+                <p> Veterinarian at Doggo Hospital <br>
                 Professor Khit Khat, a native of Gridania, obtained his
                 undergraduate degree in biochemistry at Earthling,
-                and his doctorate at the University of Cells Studies.</p>
+                and his doctorate at the University of Cells Studies.
+                <br><br>
+                <i>Works Monday to Wednesday</i></p>
             </div>
           </div>
           <div class="card">
@@ -201,9 +207,11 @@
               <h5 class="card-title">Jimmy Neutron</h5>
               <p class="card-text">
                 <p class="fst-italic">Veterinarian at Retroville Animal Hospital</p><br>
-                Jimmy Neutron graduated from the University of Georgia
+                <p> Jimmy Neutron graduated from the University of Georgia
                 College of Veterinary Medicine in 1998. He received a Bachelor
                 of Science degree at the age of 11.
+                <br><br><br>
+                <i>Works Friday to Saturday</i> </p>
             </div>
           </div>
         </div>
@@ -302,7 +310,7 @@
 
                         <p> <i class="fas fa-calendar-alt"></i> Please select a date for the appointment: </p>
                         <div class="date">
-                            <label>Date: <input type="date" name="appointment" required></label>
+                            <label>Date: <input type="text" id="dateInput" required></label>
                         </div>
                         <br>
 
@@ -334,7 +342,7 @@
                         <div class="row gy-3">
                             <div class="col-md-6">
                               <label for="cc-name" class="form-label">Name on card</label>
-                              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                              <input type="text" class="form-control" id="cc-name" placeholder="" required="" title="If you fail to make your schedule appointment you will be charged $20.">
                               <small class="text-muted">Full name as displayed on card</small>
                               <div class="invalid-feedback">
                                 Name on card is required
@@ -343,7 +351,7 @@
 
                             <div class="col-md-6">
                               <label for="cc-number" class="form-label">Credit card number</label>
-                              <input type="text" class="form-control" id="cc-number" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required="">
+                              <input type="text" class="form-control" id="cc-number" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required="" title="We ask for your credit card number in case of no-show, 20$ will be charged.">
                               <div class="invalid-feedback">
                                 Credit card number is required
                               </div>

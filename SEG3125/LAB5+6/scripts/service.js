@@ -30,6 +30,28 @@ function disableDates(date) {
     // Sunday is Day 0, disable all Sundays
     if (date.getDay() === 0)
         return [false];
+    if (document.getElementById("flexCheckJoestar").checked == true){
+        if (date.getDay() == 1)
+            return [false];
+    }
+    else if (document.getElementById("flexCheckKhit").checked == true){
+        if (date.getDay() == 4)
+            return [false];
+        if (date.getDay() == 5)
+            return [false];
+        if (date.getDay() == 6)
+            return [false];
+    }
+    else if (document.getElementById("flexCheckJimmy").checked == true){
+        if (date.getDay() == 1)
+            return [false];
+        if (date.getDay() == 2)
+            return [false];
+        if (date.getDay() == 3)
+            return [false];
+        if (date.getDay() == 4)
+            return [false];
+    }
     var string = jQuery.datepicker.formatDate(setDateFormat, date);
     return [ unavailableDates.indexOf(string) === -1 ]
 }
@@ -64,7 +86,7 @@ $(document).ready(function(){
         {
             dateFormat: setDateFormat,
             // no calendar before June 1rst 2020
-            minDate: new Date('06/01/2020'),
+            minDate: 0,
             maxDate: '+4M',
             // used to disable some dates
             beforeShowDay: $.datepicker.noWeekends,
@@ -76,22 +98,21 @@ $(document).ready(function(){
     // Look at the different events on which an action can be performed
     // https://www.w3schools.com/jquery/jquery_events.asp
     // Here, we put
-    $("#debit").on("mouseenter", function(){
-        $("#debit").addClass("showInput");
+    $("#cc-number").on("mouseenter", function(){
+        $("#cc-number").addClass("showInput");
     });
 
-    $("#debit").on("mouseleave", function(){
-        $("#debit").removeClass("showInput");
+    $("#cc-number").on("mouseleave", function(){
+        $("#cc-number").removeClass("showInput");
     });
 
     // https://jqueryui.com/tooltip/
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
-    $("#debit").tooltip({
+    $("#cc-number").tooltip({
         classes: {
             "ui-tooltip": "highlight"
         }
     });
-
 
 });
