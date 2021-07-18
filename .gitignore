@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+SEG3125/LAB8+9/mountain-soccer/node_modules
+SEG3125/LAB8+9/mountain-soccer/.pnp
+SEG3125/LAB8+9/mountain-soccer/.pnp.js
+
+# testing
+SEG3125/LAB8+9/mountain-soccer/coverage
+
+# production
+SEG3125/LAB8+9/mountain-soccer/build
+
+# misc
+SEG3125/LAB8+9/mountain-soccer/.DS_Store
+SEG3125/LAB8+9/mountain-soccer/.env.local
+SEG3125/LAB8+9/mountain-soccer/.env.development.local
+SEG3125/LAB8+9/mountain-soccer/.env.test.local
+SEG3125/LAB8+9/mountain-soccer/.env.production.local
+
+SEG3125/LAB8+9/mountain-soccer/npm-debug.log*
+SEG3125/LAB8+9/mountain-soccer/yarn-debug.log*
+SEG3125/LAB8+9/mountain-soccer/yarn-error.log*

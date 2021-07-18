@@ -1,0 +1,17 @@
+{
+    "home": {
+        "aboutUs": "About Us",
+        "aboutUs-Info": "We are a certified outdoor soccer sports club always hosting soccer events. We are always ready to answer your questions and ready to help you play better.",
+        "ourTeam": "Our Teams",
+        "ourTeam-p": "Here is a club photo of our team below: ",
+        "coaches": "Coaches",
+        "coach-p": "We have 3 Coaches for the Club who are professionals. They are:",
+        "clubAccomplishment": "Club Accomplishments",
+        "clubAccomplishment-p": "Our club teams have won multiple tournaments and here are the trophies below: ",
+        "lessonsGeneralInfo": "Lessons General Info",
+        "bookLessons": "Book Lessons",
+        "bookLessons-p": " - Click the button on the left to view the available lessons.",
+        "bookField": "Book the Field",
+        "bookField-p": " - Found some friends to play with? Click the button on the left to book a time slot in the field."
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "home": {
+        "aboutUs": "À propos de nous",
+        "aboutUs-Info": "Nous sommes un club de football en plein air certifié qui organise toujours des événements de football. Nous sommes toujours prêts à répondre à vos questions et prêts à vous aider à mieux jouer.",
+        "ourTeam": "Nos équipes",
+        "ourTeam-p": "Voici une photo du club de notre équipe ci-dessous :",
+        "coaches": "Entraîneurs",
+        "coach-p": "Nous avons 3 Coachs pour le Club qui sont des professionnels. Elles sont :",
+        "clubAccomplishment": "Accomplissements des clubs",
+        "clubAccomplishment-p": "Nos équipes de club ont remporté plusieurs tournois et voici les trophées ci-dessous :",
+        "lessonsGeneralInfo": "Informations générales sur les leçons",
+        "bookLessons": "Réserver des cours",
+        "bookLessons-p": " - Cliquez sur le bouton à gauche pour afficher les leçons disponibles.",
+        "bookField": "Réserver le terrain",
+        "bookField-p": " - Vous avez trouvé des amis avec qui jouer ? Cliquez sur le bouton à gauche pour réserver un créneau horaire sur le terrain."
+    }
+}
