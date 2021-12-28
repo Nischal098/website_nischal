@@ -1,0 +1,59 @@
+body{
+    background-image: url("images/background.jpg");
+    background-color: rgb(228, 228, 228) !important;
+    padding-top: 80px;
+    font-family: 'Montserrat';
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.navbar-dark{
+    background-color:black !important;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background-color: #cff4fc;
+}
+
+#navTop {
+    padding-left: 1.5em;
+}
+
+.nav-item i {
+    color: rgb(255, 255, 255) !important;
+}
+
+p {
+    font-size: 17px;
+}
+
+.container-mainbody {
+    height: 90vh;
+    position: relative;
+  }
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fixed-bottom{
+    padding-bottom: 60px;
+}

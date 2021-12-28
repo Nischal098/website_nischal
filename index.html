@@ -3,19 +3,50 @@
     <head>
         <!--Title Page-->
         <title>Nischal's Home Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="mainpage.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
     <body>
 
-        <!--Simple Header-->
-        <h1>Hello, I'm Nischal</h1>
+        <!-- Taken From: https://stackoverflow.com/questions/19733447/bootstrap-navbar-with-left-center-or-right-aligned-items -->
+        <nav class="fixed-top navbar navbar-expand-md navbar-dark" id="navTop">
+            <a class="navbar-brand" href="#">
+                <x1 class="align-middle fw-bolder">
+                    <img src="images/squidward-logo.gif"
+                    alt="VET LOGO" width="50" height="50" class="d-inline-block align-text-top">
+                </x1>
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="SEG3125/seg_home.html"><i class="fas fa-info-circle" id="nav_icon"></i>
+                            SEG3125 Labs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle" id="nav_icon"></i>
+                            About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <!--Simple Description-->
-        <p>Welcome to my Website!</p>
+        <div class="container-mainbody">
+            <div class="center">
+                <!--Simple Header-->
+                <h1>Hello, I'm Nischal</h1>
 
-        <!--Page References-->
-        <a href="SEG3125/seg_home.html">SEG3125 Labs</a>
-        <br>
-        <a href="about.html">About Me.</a>
+                <!--Simple Description-->
+                <h2>Welcome to my Website!</h2>
+            </div>
+        </div>
+
+        <!-- Bottom Navbar Works Maybe? -->
+        <nav class="fixed-bottom navbar navbar-expand-md navbar-dark" id="navTop">
+
+        </nav>
 
     </body>
 </html>
